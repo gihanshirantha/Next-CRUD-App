@@ -1,0 +1,21 @@
+{
+    "employee":[
+        {
+            "id":"1",
+            "name":"Nimal",
+            "job":"Software Engineer",
+            "salary":35000
+        },
+        {
+            "id":"2",
+            "name":"Amal",
+            "job":"Web Developer",
+            "salary":35000
+        }, {
+            "id":"3",
+            "name":"Supun",
+            "job":"UI Engineer",
+            "salary":35000
+        }
+    ]
+}

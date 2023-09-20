@@ -1,11 +1,16 @@
-import Header from "../../Components/Header"
+import AddTask from "@/Components/AddTask"
+import EmployeeList from "@/Components/EmployeeList"
+import Header from "@/Components/Header"
+
 
 
 export default function Home() {
   return (
-    <div className='container'>
+    <main className="max-w-4xl mt-4 mx-auto">
       <Header/>
-    </div>
+      <AddTask/>
+      <EmployeeList/>
+    </main>
     
   )
 }
