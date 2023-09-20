@@ -1,6 +1,12 @@
-import React from 'react'
+import { IEmp } from "../../types/employee"
 
-const EmployeeList = () => {
+
+
+interface EmployeeProps{
+    employee:IEmp[]
+}
+
+const EmployeeList:React.FC<EmployeeProps> = ({employee}) => {
   return (
     <div>
         <div className="overflow-x-auto">
@@ -15,13 +21,15 @@ const EmployeeList = () => {
       </tr>
     </thead>
     <tbody>
-      {/* row 1 */}
-      <tr className="bg-base-200">
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+     {employee.map(employe=>(
+        <tr key={employe.id} className="bg-base-200">
+        <th>{employe.id}</th>
+        <td>{employe.name}</td>
+        <td>{employe.job}</td>
+        <td>{employe.salary}</td>
       </tr>
+     ))}
+      
       
     </tbody>
   </table>
