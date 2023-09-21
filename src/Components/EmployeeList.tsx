@@ -1,4 +1,5 @@
 import { IEmp } from "../../types/employee"
+import {FaUserEdit} from 'react-icons/fa'
 
 
 
@@ -18,6 +19,7 @@ const EmployeeList:React.FC<EmployeeProps> = ({employee}) => {
         <th>Name</th>
         <th>Job</th>
         <th>Favorite Color</th>
+        <th>Options</th>
       </tr>
     </thead>
     <tbody>
@@ -27,6 +29,7 @@ const EmployeeList:React.FC<EmployeeProps> = ({employee}) => {
         <td>{employe.name}</td>
         <td>{employe.job}</td>
         <td>{employe.salary}</td>
+        <td><FaUserEdit/></td>
       </tr>
      ))}
       
