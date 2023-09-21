@@ -19,3 +19,14 @@ export const addEmployee=async(employee:IEmp):Promise<IEmp>=>{
     const newEmployee=await res.json();
     return newEmployee;
 }
+export const updateEmployee=async(employee:IEmp):Promise<IEmp>=>{
+    const res = await fetch(`${BASE_URL}/employee/${employee.id}`,{
+        method:'PUT',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify(employee)
+    })
+    const updatedEmployee=await res.json();
+    return updatedEmployee;
+}

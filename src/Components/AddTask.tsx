@@ -10,7 +10,7 @@ const AddTask = () => {
     const router =useRouter()
 
 const [modalOpen,setModalOpen]=useState<boolean>(false);
-const [newEmpValue,setNewEmpValue]=useState<string>('')
+
 const [empname, setName] = useState<string>("");
 const [emproll,setRoll]=useState<string>('');
 const [empsalary,setSalary]=useState<string>('');

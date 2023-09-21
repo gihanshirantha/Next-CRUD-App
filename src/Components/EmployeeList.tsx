@@ -1,5 +1,6 @@
 import { IEmp } from "../../types/employee"
-import {FaUserEdit} from 'react-icons/fa'
+
+import Employee from "./Employee"
 
 
 
@@ -23,15 +24,9 @@ const EmployeeList:React.FC<EmployeeProps> = ({employee}) => {
       </tr>
     </thead>
     <tbody>
-     {employee.map(employe=>(
-        <tr key={employe.id} className="bg-base-200">
-        <th>{employe.id}</th>
-        <td>{employe.name}</td>
-        <td>{employe.job}</td>
-        <td>{employe.salary}</td>
-        <td><FaUserEdit/></td>
-      </tr>
-     ))}
+     {employee.map((employe)=>
+        <Employee key={employe.id} employee={employe}/>
+     )}
       
       
     </tbody>
