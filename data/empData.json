@@ -23,18 +23,6 @@
       "name": "Gihan",
       "job": "Web dev",
       "salary": "35000"
-    },
-    {
-      "id": 5,
-      "name": "Saman",
-      "job": "QA",
-      "salary": "45000"
-    },
-    {
-      "id": 39,
-      "name": "Gihan",
-      "job": "Web dev",
-      "salary": "60000"
     }
   ]
 }
